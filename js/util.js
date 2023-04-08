@@ -1,4 +1,4 @@
-function getRandom(from, to) {
+export function getRandom(from, to) {
   if (from > to) {
     return -1;
   }
@@ -8,6 +8,6 @@ function getRandom(from, to) {
   return Math.floor(Math.random() * (to - from + 1)) + from;
 }
 
-function checkMaxLength(string, maxLength) {
+export function checkMaxLength(string, maxLength) {
   return string.length <= maxLength;
 }

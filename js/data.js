@@ -1,9 +1,9 @@
 import { getRandom } from './util.js';
 
-function generatePhotoData(count) {
+export function generatePhotoData(count) {
   const generateSingle = (i) => ({
     id: i,
-    url: 'photos/${i + 1}$.jpg',
+    url: 'photos/${i + 1}.jpg',
     description: 'Here is some random string: \'39CDF217\'',
     likes: getRandom(15, 200),
     comments: getRandom(0, 200),
@@ -14,4 +14,4 @@ function generatePhotoData(count) {
     photoData.push(generateSingle(i));
   }
   return photoData;
-} 
+}
