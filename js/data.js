@@ -3,7 +3,7 @@ import { getRandom } from './util.js';
 export function generatePhotoData(count) {
   const generateSingle = (i) => ({
     id: i,
-    url: 'photos/${i + 1}.jpg',
+    url: `photos/${i + 1}.jpg`,
     description: 'Here is some random string: \'39CDF217\'',
     likes: getRandom(15, 200),
     comments: getRandom(0, 200),
