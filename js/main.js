@@ -1,5 +1,7 @@
 import { generatePhotoData } from './data.js';
-import { checkMaxLength } from 'util.js';
+import { checkMaxLength } from './util.js';
+import { drawMiniatures } from './dom.js';
 
 checkMaxLength('Hello world!', 255);
-generatePhotoData(20);
+const photoData = generatePhotoData(20);
+drawMiniatures(photoData);
