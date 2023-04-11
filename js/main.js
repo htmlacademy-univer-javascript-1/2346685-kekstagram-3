@@ -1,3 +1,4 @@
+//Задание 7 часть 2
 import { generatePhotoData } from './data.js';
 import { checkMaxLength } from './util.js';
 import { drawMiniatures } from './dom.js';
