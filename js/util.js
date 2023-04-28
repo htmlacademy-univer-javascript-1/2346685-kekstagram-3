@@ -11,3 +11,5 @@ export function getRandom(from, to) {
 export function checkMaxLength(string, maxLength) {
   return string.length <= maxLength;
 }
+
+export const isEscapeKey = (ev) => ev.key === 'Escape';
