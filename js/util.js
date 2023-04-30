@@ -8,6 +8,10 @@ export function getRandom(from, to) {
   return Math.floor(Math.random() * (to - from + 1)) + from;
 }
 
+export function clamp(number, min, max) {
+  return Math.max(Math.min(number, max), min);
+}
+
 export function checkMaxLength(string, maxLength) {
   return string.length <= maxLength;
 }
